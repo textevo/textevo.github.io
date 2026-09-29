@@ -6,7 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Textevo, a text animation tool for After Effects">
       
+      
+        <meta name="author" content="Wlazinski Matthieu">
+      
+      
+        <link rel="canonical" href="https://textevo.github.io/">
       
       
       
@@ -57,6 +63,8 @@
   
   
     
+    
+      
     
     
     
@@ -114,7 +122,33 @@
     </div>
     
       
+        <form class="md-header__option" data-md-component="palette">
+  
     
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -142,6 +176,8 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -265,7 +301,7 @@
   <a href="#what-is-textevo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What is Textevo ?
+        What is Textevo?
       
     </span>
   </a>
@@ -273,10 +309,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#whats-new" class="md-nav__link">
+  <a href="#how-does-it-work" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What's new ?
+        How does it work?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-new-in-textevo-2026-beta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What's new in Textevo 2026 (beta)
       
     </span>
   </a>
@@ -287,7 +334,7 @@
   <a href="#about" class="md-nav__link">
     <span class="md-ellipsis">
       
-        About !
+        About
       
     </span>
   </a>
@@ -317,6 +364,33 @@
     
   
     Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting started
   
 
     
@@ -390,6 +464,87 @@
   
   
     <li class="md-nav__item">
+      <a href="fx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fx
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="presets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Presets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="faq/" class="md-nav__link">
         
   
@@ -398,6 +553,33 @@
     
   
     FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="version-history/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Version history
   
 
     
@@ -440,7 +622,7 @@
   <a href="#what-is-textevo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What is Textevo ?
+        What is Textevo?
       
     </span>
   </a>
@@ -448,10 +630,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#whats-new" class="md-nav__link">
+  <a href="#how-does-it-work" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What's new ?
+        How does it work?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-new-in-textevo-2026-beta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What's new in Textevo 2026 (beta)
       
     </span>
   </a>
@@ -462,7 +655,7 @@
   <a href="#about" class="md-nav__link">
     <span class="md-ellipsis">
       
-        About !
+        About
       
     </span>
   </a>
@@ -486,29 +679,39 @@
 
 
 
-<p><img alt="" src="img/banner.png" /></p>
-<h1 id="introduction">Introduction</h1>
-<h2 id="what-is-textevo">What is Textevo ?</h2>
-<p>Textevo is a text animation tool for after effects. It is mainly useful to break down text animation letters by letters, words by words or lines by lines.</p>
-<p><img alt="" src="img/gifs/letters_by_letters.gif" /><img alt="" src="img/gifs/words_by_words.gif" /><img alt="" src="img/gifs/lines_by_lines.gif" /></p>
-<p>Textevo automatically adds a text animation group and a control effect:</p>
-<p><img alt="" src="img/te_controls.png" /></p>
-<p>The "strength" parameter is used to adjust the overall intensity of the effect. You will animate it to your liking and the instances (letters, words, lines) of the text will follow with the delay you have set.</p>
-<p>You can add as many textevo effects on your text layer. You will be able to animate your texts with a lot of freedom, to add arrival and departure movements as well as intermediate animations. </p>
-<h2 id="whats-new">What's new ?</h2>
+<p><img alt="Textevo" src="img/banner.png" /></p>
+<h1 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h1>
+<h2 id="what-is-textevo">What is Textevo?<a class="headerlink" href="#what-is-textevo" title="Permanent link">&para;</a></h2>
+<p>Textevo is a text animation tool for After Effects. It breaks down a text animation <strong>letter by letter</strong>, <strong>word by word</strong> or <strong>line by line</strong>: animate once, and every letter, word or line follows with the delay you choose.</p>
+<p><img alt="Letters" src="img/gifs/letters_by_letters.gif" /> <img alt="Words" src="img/gifs/words_by_words.gif" /> <img alt="Lines" src="img/gifs/lines_by_lines.gif" /></p>
+<h2 id="how-does-it-work">How does it work?<a class="headerlink" href="#how-does-it-work" title="Permanent link">&para;</a></h2>
+<p>When you click <strong>Add</strong>, Textevo puts two things on your text layer:</p>
 <ul>
-<li>A light and flexible interface</li>
-<li>An effect grouping the main parameters </li>
-<li>Ability to stack effects for more freedom</li>
-<li>More animation directions ( random , outwards , inwards etc... )</li>
-<li>A preset system</li>
+<li>a <strong>Textevo effect</strong>, which gathers all the controls: strength, delay, direction, position, scale, rotation, opacity, blur...</li>
+<li>a <strong>text animator</strong>, linked to the effect by expressions, which does the work on the text.</li>
 </ul>
-<p>And lots of other little options</p>
-<h2 id="about">About !</h2>
-<p>This script was made by Wlazinski Matthieu , with the help of the community: www.motion-cafe.com </p>
-<p>This script makes use of DuAEF - The Duduf After Effects Framework, by Nicolas Dufresne and Contributors licensed under the GNU General Public License v3. </p>
-<p>For more information: https://rainboxlab.org/ </p>
-<p>To support Nicolas Dufresne: https://www.patreon.com/duduf </p>
+<p><img alt="Textevo effect" src="img/te_controls.png" /></p>
+<p>You animate the <strong>Strength</strong> of the effect: at 100 % the text is fully transformed (moved, scaled, transparent...), at 0 % it is back to normal. Each letter, word or line plays this animation with the delay you have set.</p>
+<p>You can stack as many Textevo as you want on the same text layer: one for the arrival, one for the exit, one for an animation in between...</p>
+<div class="admonition tip">
+<p class="admonition-title">New to Textevo?</p>
+<p>Follow <a href="getting-started/">Getting started</a> to make your first animation in a few minutes.</p>
+</div>
+<h2 id="whats-new-in-textevo-2026-beta">What's new in Textevo 2026 (beta)<a class="headerlink" href="#whats-new-in-textevo-2026-beta" title="Permanent link">&para;</a></h2>
+<dl>
+<dt><strong>Fx: Elastic, Bounce and Oscillation</strong></dt>
+<dd>The new <a href="fx/">Fx</a> button adds an elastic, a bounce or an oscillation to the strength of a Textevo, with its own controls in the effect. Textevo can optimize your keyframes so the effect really shows.</dd>
+<dt><strong>Presets that land where you expect</strong></dt>
+<dd><a href="presets/">Presets</a> are applied from the start of the text layer (or at the current time with <span class="keys"><kbd class="key-alt">Alt</kbd></span> + click), on all the selected text layers or on a new one. The presets window has a search field and a rename button. Your old presets are updated automatically.</dd>
+<dt><strong>Presets that keep your whole look</strong></dt>
+<dd>The selectors and properties you add to the Textevo text animator (wiggly selector, fill color...) are saved in the presets and kept when you copy, switch 2D / 3D or change the Fx. Presets can also save the other effects of the layer (drop shadow, glow...).</dd>
+<dt><strong>And also</strong></dt>
+<dd><span class="keys"><kbd class="key-alt">Alt</kbd></span> + click on <strong>Add</strong> for the reversed animation with mirrored easing, <span class="keys"><kbd class="key-alt">Alt</kbd></span> + click on <strong>Paste</strong> to paste at the current time, a new <a href="settings/">settings</a> window, dialogs in the After Effects colors and many fixes.</dd>
+</dl>
+<p>See the <a href="version-history/">version history</a> for all the changes.</p>
+<h2 id="about">About<a class="headerlink" href="#about" title="Permanent link">&para;</a></h2>
+<p>Textevo is made by Wlazinski Matthieu, with the help of the community of <a href="https://www.motion-cafe.com">motion-cafe.com</a>.</p>
+<p>Textevo is available on <a href="https://aescripts.com/textevo/">aescripts + aeplugins</a>. For help, bug reports or ideas, open a support ticket from the product page.</p>
 
 
 
@@ -526,12 +729,44 @@
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
         
       </main>
       
         <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+        
+          
+          <a href="installation/" class="md-footer__link md-footer__link--next" aria-label="Next: Installation">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Installation
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -558,7 +793,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": [], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.instant", "navigation.top", "navigation.footer", "search.highlight", "search.suggest", "content.tabs.link"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="assets/javascripts/bundle.d7400e89.min.js"></script>

@@ -6,10 +6,16 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Textevo, a text animation tool for After Effects">
       
       
+        <meta name="author" content="Wlazinski Matthieu">
       
-        <link rel="prev" href="../installation/">
+      
+        <link rel="canonical" href="https://textevo.github.io/interface/">
+      
+      
+        <link rel="prev" href="../getting-started/">
       
       
         <link rel="next" href="../controls/">
@@ -59,6 +65,8 @@
   
   
     
+    
+      
     
     
     
@@ -116,7 +124,33 @@
     </div>
     
       
+        <form class="md-header__option" data-md-component="palette">
+  
     
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -144,6 +178,8 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -239,6 +275,33 @@
     
   
     Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting started
   
 
     
@@ -359,30 +422,24 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Based on">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#the-auto-adapt-the-delay-checkbox" class="md-nav__link">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2d-3d" class="md-nav__link">
     <span class="md-ellipsis">
       
-        the "Auto adapt the delay" checkbox
+        2D / 3D
       
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
         <li class="md-nav__item">
-  <a href="#toggle-2d3d" class="md-nav__link">
+  <a href="#fx" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Toggle 2d/3d
+        Fx
       
     </span>
   </a>
@@ -419,23 +476,6 @@
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Presets">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#presets-saved-with-an-older-version" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Presets saved with an older version
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -492,6 +532,87 @@
   
   
     <li class="md-nav__item">
+      <a href="../fx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fx
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../presets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Presets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../faq/" class="md-nav__link">
         
   
@@ -500,6 +621,33 @@
     
   
     FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../version-history/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Version history
   
 
     
@@ -580,30 +728,24 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Based on">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#the-auto-adapt-the-delay-checkbox" class="md-nav__link">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2d-3d" class="md-nav__link">
     <span class="md-ellipsis">
       
-        the "Auto adapt the delay" checkbox
+        2D / 3D
       
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
       
         <li class="md-nav__item">
-  <a href="#toggle-2d3d" class="md-nav__link">
+  <a href="#fx" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Toggle 2d/3d
+        Fx
       
     </span>
   </a>
@@ -641,23 +783,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Presets">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#presets-saved-with-an-older-version" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Presets saved with an older version
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -688,49 +813,52 @@
 
 
 
-<h1 id="interface">Interface</h1>
-<p>Textevo's interface is responsive and flexible, you can adjust it vertically or horizontally.</p>
-<p><img alt="" src="../img/interface.png" /></p>
-<h2 id="add">Add</h2>
-<p>Click = adds textvo to your selected texts.</p>
-<p>Alt + Click = adds Textevo but with inverted keyframes (useful for an output animation for example)</p>
-<pre><code>If no layer is selected textvo will generate a text layer automatically.
-(in active composition).
-</code></pre>
+<h1 id="interface">Interface<a class="headerlink" href="#interface" title="Permanent link">&para;</a></h1>
+<p>The Textevo panel adapts to its size: dock it vertically or horizontally.</p>
+<p><img alt="Textevo panel" src="../img/interface_2026.png" /></p>
+<p>From left to right (or from top to bottom): <strong>Add</strong>, <strong>Remove</strong>, <strong>Rename</strong>, <strong>Based on</strong>, <strong>2D / 3D</strong>, <strong>Fx</strong>, <strong>Copy</strong>, <strong>Paste</strong>, <strong>Presets</strong> and <strong>Settings</strong>. Hover a button to see what it does.</p>
+<p>Most buttons work on the <strong>selected Textevo effects</strong>, or on <strong>all the Textevo of the selected text layers</strong> when no Textevo is selected.</p>
 <div class="admonition warning">
 <p class="admonition-title">Always use the Remove and Rename buttons</p>
 <p>A Textevo is made of two parts: the <strong>Textevo effect</strong> and a <strong>text animator</strong> on the text layer, linked by expressions.
-Removing or renaming the effect by hand only changes one of the two parts. Use the Remove and Rename buttons of the panel, which handle both.</p>
+Removing or renaming the effect by hand only changes one of the two parts. Use the <strong>Remove</strong> and <strong>Rename</strong> buttons of the panel, which handle both.</p>
 </div>
-<h2 id="remove">Remove</h2>
-<p>Deletes one or all instances of textvo, depending on whether an effect or layer(s) is selected.</p>
-<p>The effect <strong>and</strong> its text animator are removed. If you delete the effect by hand, its text animator stays on the layer with expression errors, and has to be deleted by hand too.</p>
-<h2 id="rename">Rename</h2>
+<h2 id="add">Add<a class="headerlink" href="#add" title="Permanent link">&para;</a></h2>
+<p>Adds a Textevo to the selected text layer. If no text layer is selected, Textevo creates one in the active composition.</p>
+<ul>
+<li><strong>Click</strong>: keyframes on the Strength from 100 % to 0 %, starting at the current time (an arrival).</li>
+<li><span class="keys"><kbd class="key-alt">Alt</kbd></span> + <strong>click</strong>: the reversed animation, from 0 % to 100 %, with mirrored easing (an exit).</li>
+</ul>
+<p>The keyframes, their easing, the delay and the direction of a new Textevo are set in the <a href="../settings/">settings</a>.</p>
+<h2 id="remove">Remove<a class="headerlink" href="#remove" title="Permanent link">&para;</a></h2>
+<p>Removes the selected Textevo, or all the Textevo of the selected layers: the effect <strong>and</strong> its text animator.</p>
+<p>If you delete the effect by hand, its text animator stays on the layer with expression errors, and has to be deleted by hand too.</p>
+<h2 id="rename">Rename<a class="headerlink" href="#rename" title="Permanent link">&para;</a></h2>
 <p>Renames the selected Textevo effect and its text animator together.</p>
-<p>If you rename the effect by hand, After Effects updates the expressions but not the name of the text animator, so the effect and its animator no longer have the same name in the timeline.</p>
-<h2 id="based-on">Based on</h2>
-<p>This opens a window with options allowing you to choose whether the animation will be split by letters, letters spacesless, words or lines. </p>
-<p><img alt="" src="../img/BasedOn.png" /></p>
-<h4 id="the-auto-adapt-the-delay-checkbox">the "Auto adapt the delay" checkbox</h4>
-<p>Adjusts the delay according to the number of instances. For example switching from a 12 letter animation to 3 words will adjust the delay with a ratio of 4 (12 / 3).</p>
-<h2 id="toggle-2d3d">Toggle 2d/3d</h2>
-<p>Activate and deactivate 3d per character</p>
-<h2 id="copy">Copy</h2>
-<p>Copies all the Textevo or only the selected ones.</p>
-<h2 id="paste">Paste</h2>
-<p>Paste the textevo(s) you previously copied on the selected layer(s).</p>
-<p>Click = the keyframes keep their position from the in point of the layer: a key on the first frame of the copied layer lands on the first frame of the target layer.</p>
-<p>Alt + Click = the first keyframe lands at the current time.</p>
-<h2 id="presets">Presets</h2>
-<p>Click = Opens a preset management window. 
-Shift + click = saves the current selection as a preset.</p>
-<p>In the presets window, <strong>apply</strong> (or a double click) applies the preset from the in point of the layer. Alt + click (or Alt + double click) puts the first keyframe at the current time.</p>
-<h4 id="presets-saved-with-an-older-version">Presets saved with an older version</h4>
-<p>Presets saved before Textevo 2026 stored their keyframes from the start of the composition, so they could land far after the text layer, sometimes outside of the composition. When the presets window opens, Textevo detects them and offers to update them so they start at the in point of the layer. A copy of the original files is kept in the <code>backup_before_2026</code> folder of your presets.</p>
-<p><img alt="" src="../img/Presets.png" /></p>
-<h2 id="settings">Settings</h2>
-<p>Opens the configuration window. You can change the default behaviors.</p>
-<p><img alt="" src="../img/Settings.png" /></p>
+<p>If you rename the effect by hand, After Effects updates the expressions but not the name of the text animator: the effect and its animator no longer have the same name in the timeline.</p>
+<h2 id="based-on">Based on<a class="headerlink" href="#based-on" title="Permanent link">&para;</a></h2>
+<p>Chooses how the text is broken down: <strong>Letters</strong>, <strong>Letters spaceless</strong>, <strong>Words</strong> or <strong>Lines</strong>.</p>
+<p><img alt="Based on" src="../img/BasedOn.png" /></p>
+<p><strong>Auto adapt the delay</strong>: adjusts the delay to the new number of letters, words or lines, to keep about the same total duration. For example, switching from 12 letters to 3 words multiplies the delay by 4.</p>
+<h2 id="2d-3d">2D / 3D<a class="headerlink" href="#2d-3d" title="Permanent link">&para;</a></h2>
+<p>Switches the 3D per character of the layer on or off. The Textevo animators are rebuilt with the 2D or 3D properties (3D rotations, Z position...), keeping your settings and what you added to them.</p>
+<h2 id="fx">Fx<a class="headerlink" href="#fx" title="Permanent link">&para;</a></h2>
+<p>Adds an <strong>Elastic</strong>, a <strong>Bounce</strong> or an <strong>Oscillation</strong> to the strength of the Textevo. See <a href="../fx/">Fx</a>.</p>
+<h2 id="copy">Copy<a class="headerlink" href="#copy" title="Permanent link">&para;</a></h2>
+<p>Copies the selected Textevo, or all the Textevo of the layer: the effects with their keyframes, their Fx, their "Based on" mode and what you added to their text animators.</p>
+<h2 id="paste">Paste<a class="headerlink" href="#paste" title="Permanent link">&para;</a></h2>
+<p>Pastes the copied Textevo on all the selected text layers.</p>
+<ul>
+<li><strong>Click</strong>: the keyframes keep their position from the start (in point) of the layer: a keyframe on the first frame of the copied layer lands on the first frame of the target layer.</li>
+<li><span class="keys"><kbd class="key-alt">Alt</kbd></span> + <strong>click</strong>: the first keyframe lands at the current time.</li>
+</ul>
+<h2 id="presets">Presets<a class="headerlink" href="#presets" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Click</strong>: opens the <a href="../presets/">presets window</a>.</li>
+<li><span class="keys"><kbd class="key-shift">Shift</kbd></span> + <strong>click</strong>: saves the Textevo of the selected layer as a preset.</li>
+</ul>
+<h2 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">&para;</a></h2>
+<p>Opens the <a href="../settings/">settings</a>: the default values of a new Textevo, the presets folder...</p>
 
 
 
@@ -748,12 +876,60 @@ Shift + click = saves the current selection as a preset.</p>
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
         
       </main>
       
         <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../getting-started/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Getting started">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Getting started
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../controls/" class="md-footer__link md-footer__link--next" aria-label="Next: Controls">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Controls
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -780,7 +956,7 @@ Shift + click = saves the current selection as a preset.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.top", "navigation.footer", "search.highlight", "search.suggest", "content.tabs.link"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
