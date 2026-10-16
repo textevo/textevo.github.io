@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://textevo.github.io/presets/">
       
       
-        <link rel="prev" href="../fx/">
+        <link rel="prev" href="../motion/">
       
       
         <link rel="next" href="../settings/">
@@ -321,6 +321,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../quick-tips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick tips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../interface/" class="md-nav__link">
         
   
@@ -375,14 +402,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../fx/" class="md-nav__link">
+      <a href="../motion/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Fx
+    Motion
   
 
     
@@ -462,6 +489,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#dockable-presets-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dockable presets panel
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#save-a-preset" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -501,10 +539,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#search-rename-remove" class="md-nav__link">
+  <a href="#find-a-preset" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Search, rename, remove
+        Find a preset
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rename-remove" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rename, remove
       
     </span>
   </a>
@@ -649,6 +698,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#dockable-presets-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dockable presets panel
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#save-a-preset" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -688,10 +748,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#search-rename-remove" class="md-nav__link">
+  <a href="#find-a-preset" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Search, rename, remove
+        Find a preset
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rename-remove" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rename, remove
       
     </span>
   </a>
@@ -741,6 +812,13 @@
 <p>Save your Textevo animations and apply them on any text in one click.</p>
 <p><img align="right" alt="Presets window" src="../img/presets_2026.png" width="260" /></p>
 <p>Open the presets window with the <strong>Presets</strong> button of the panel.</p>
+<h2 id="dockable-presets-panel">Dockable presets panel<a class="headerlink" href="#dockable-presets-panel" title="Permanent link">&para;</a></h2>
+<p>Install <code>textevo presets.jsxbin</code> next to <code>textevo.jsxbin</code> (see <a href="../installation/">Installation</a>): the presets manager becomes a panel of After Effects, that you can dock next to your timeline or your Effect Controls, like any panel. Open it from <strong>Window</strong> &gt; <strong>textevo presets.jsxbin</strong>.</p>
+<ul>
+<li>The <strong>Presets</strong> button of the Textevo panel opens it, instead of the floating window.</li>
+<li>Its list updates by itself when you save, rename or remove a preset from the Textevo panel or from another presets window.</li>
+<li>It works exactly like the presets window described below.</li>
+</ul>
 <h2 id="save-a-preset">Save a preset<a class="headerlink" href="#save-a-preset" title="Permanent link">&para;</a></h2>
 <p>Select a text layer with Textevo, then click <strong>add</strong> in the presets window, or <span class="keys"><kbd class="key-shift">Shift</kbd></span> + click the <strong>Presets</strong> button of the panel. Give your preset a name.</p>
 <ul>
@@ -754,8 +832,8 @@
 </ul>
 <h3 id="what-a-preset-contains">What a preset contains<a class="headerlink" href="#what-a-preset-contains" title="Permanent link">&para;</a></h3>
 <ul>
-<li>The <strong>Textevo effects</strong>, with their values, keyframes and expressions, and their <a href="../fx/">Fx</a>.</li>
-<li>Their <strong>"Based on"</strong> mode and the <strong>3D per character</strong> of the layer.</li>
+<li>The <strong>Textevo effects</strong>, with their values, keyframes and expressions, and their <a href="../motion/">Motion</a>.</li>
+<li>Their <strong>"Based on"</strong> mode, their <a href="../motion/#delay-from-markers">delay from markers</a> and the <strong>3D per character</strong> of the layer.</li>
 <li>What you <strong>added to the Textevo text animators</strong>: other selectors (wiggly, range, expression...) and properties (fill color, stroke...), with their values, keyframes and expressions.</li>
 <li>With <strong>Save all</strong>: the <strong>other effects</strong> of the layer, in their order, enabled or not.</li>
 </ul>
@@ -764,9 +842,10 @@
 <p>Select one or more presets and click <strong>apply</strong>, or double click a preset.</p>
 <ul>
 <li>The presets are applied on <strong>all the selected text layers</strong>.</li>
-<li>If <strong>no text layer is selected</strong>, Textevo creates one in the active composition, like the Add button.</li>
+<li>If <strong>no text layer is selected</strong>, Textevo creates one in the active composition, like the Add button. Its text shows the preset: a sentence for a preset based on words, a few lines for a preset based on lines.</li>
 <li>The keyframes start <strong>from the start (in point) of each layer</strong>.</li>
 <li><span class="keys"><kbd class="key-alt">Alt</kbd></span> + click on <strong>apply</strong> (or <span class="keys"><kbd class="key-alt">Alt</kbd></span> + double click): the first keyframe lands <strong>at the current time</strong>.</li>
+<li>A preset with the <a href="../motion/#delay-from-markers">delay from markers</a>, applied on a layer without markers, adds the markers: one per letter, word or line of the text of the layer.</li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Effects that are not installed</p>
@@ -776,9 +855,14 @@
 <p class="admonition-title">Effects that point to other layers</p>
 <p>Effect parameters that point to another layer (a displacement map, a source layer...) are not saved: they have no meaning in another composition.</p>
 </div>
-<h2 id="search-rename-remove">Search, rename, remove<a class="headerlink" href="#search-rename-remove" title="Permanent link">&para;</a></h2>
+<h2 id="find-a-preset">Find a preset<a class="headerlink" href="#find-a-preset" title="Permanent link">&para;</a></h2>
+<p>The list shows, for each preset, what its Textevo are <strong>based on</strong> (letters, words, lines...) and their <strong>motion</strong> (elastic, bounce, oscillation, and <strong>Markers</strong> for the delay from markers). The presets are sorted by name.</p>
 <ul>
-<li><strong>Search</strong>: type a part of a name to filter the list (not case sensitive). The presets are sorted by name.</li>
+<li><strong>Search</strong>: type a part of a name to filter the list (not case sensitive).</li>
+<li><strong>Based on</strong> and <strong>Motion</strong>: show only the presets based on words, or with an elastic... The filters work together with the search.</li>
+</ul>
+<h2 id="rename-remove">Rename, remove<a class="headerlink" href="#rename-remove" title="Permanent link">&para;</a></h2>
+<ul>
 <li><strong>rename</strong>: renames the selected preset (one at a time).</li>
 <li><strong>remove</strong>: deletes the selected presets, after a confirmation.</li>
 <li><strong>refresh</strong>: reloads the list, for example after copying preset files in the folder.</li>
@@ -826,7 +910,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../fx/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Fx">
+          <a href="../motion/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Motion">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -836,7 +920,7 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Fx
+                Motion
               </div>
             </div>
           </a>

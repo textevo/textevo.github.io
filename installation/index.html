@@ -423,6 +423,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../quick-tips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick tips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../interface/" class="md-nav__link">
         
   
@@ -477,14 +504,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../fx/" class="md-nav__link">
+      <a href="../motion/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Fx
+    Motion
   
 
     
@@ -713,8 +740,9 @@
 <p>and check <strong>Allow Scripts to Write Files and Access Network</strong>.</p>
 <p>On macOS, the Preferences are in the After Effects menu.</p>
 <h2 id="2-install-the-panel">2. Install the panel<a class="headerlink" href="#2-install-the-panel" title="Permanent link">&para;</a></h2>
-<p>In After Effects: <strong>File &gt; Scripts &gt; Install ScriptUI Panel...</strong> and select <code>Textevo.jsx</code>.</p>
-<p>Or copy <code>Textevo.jsx</code> to the <strong>ScriptUI Panels</strong> folder of After Effects:</p>
+<p>The easiest way is the <a href="https://aescripts.com/learn/aescripts-aeplugins-manager-app/">aescripts + aeplugins manager</a>: it installs Textevo for you.</p>
+<p>To install by hand, in After Effects: <strong>File &gt; Scripts &gt; Install ScriptUI Panel...</strong> and select <code>textevo.jsxbin</code>. Do it again with <code>textevo presets.jsxbin</code> (a separate download) to get the presets manager as a dockable panel too (optional).</p>
+<p>Or copy <code>textevo.jsxbin</code> and <code>textevo presets.jsxbin</code> <strong>directly</strong> into the <strong>ScriptUI Panels</strong> folder of After Effects, not in a subfolder:</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Windows</label><label for="__tabbed_1_2">macOS</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -728,12 +756,13 @@
 </div>
 </div>
 <h2 id="3-restart-after-effects">3. Restart After Effects<a class="headerlink" href="#3-restart-after-effects" title="Permanent link">&para;</a></h2>
-<p>Open the panel from the <strong>Window</strong> menu &gt; <strong>Textevo.jsx</strong>, and dock it where you like: the panel adapts to a vertical or horizontal layout.</p>
+<p>Open the panel from the <strong>Window</strong> menu &gt; <strong>textevo.jsxbin</strong>, and dock it where you like: the panel adapts to a vertical or horizontal layout.</p>
+<p>With <code>textevo presets.jsxbin</code> installed, <strong>Window</strong> &gt; <strong>textevo presets.jsxbin</strong> opens the <a href="../presets/#dockable-presets-panel">presets manager</a> as a panel you can dock too.</p>
 <h2 id="first-launch">First launch<a class="headerlink" href="#first-launch" title="Permanent link">&para;</a></h2>
 <p>Textevo asks for a folder where it saves its settings and presets. If you cancel, your <strong>Documents</strong> folder is used. You can change it later in the <a href="../settings/">settings</a>.</p>
 <h2 id="updating-from-an-older-version">Updating from an older version<a class="headerlink" href="#updating-from-an-older-version" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Install <code>Textevo.jsx</code> as above. If the older version was named differently (<code>textevo.jsx</code>, <code>textEvo241118.jsx</code>...), remove it from the ScriptUI Panels folder, or you will have two Textevo panels in the Window menu.</li>
+<li>Install <code>textevo.jsxbin</code> as above, and remove the older Textevo files from the ScriptUI Panels folder (<code>textevo2.jsx</code>, <code>Textevo.jsx</code>, <code>textEvo241118.jsx</code>..., and on macOS a file named <code>Textevo_2026.0.0\Textevo.jsx</code>), or you will have two Textevo panels in the Window menu.</li>
 <li>Your settings are kept.</li>
 <li>Your presets are kept too. The first time you open the presets window, Textevo offers to update the presets saved with an older version: see <a href="../presets/#presets-saved-with-an-older-version">Presets saved with an older version</a>.</li>
 <li>The Textevo already in your projects keep working.</li>

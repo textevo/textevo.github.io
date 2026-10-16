@@ -319,6 +319,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../quick-tips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick tips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../interface/" class="md-nav__link">
         
   
@@ -373,14 +400,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../fx/" class="md-nav__link">
+      <a href="../motion/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Fx
+    Motion
   
 
     
@@ -541,6 +568,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#202610-beta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026.1.0 (beta)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#202600-beta-september-2026" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -619,6 +657,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#202610-beta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026.1.0 (beta)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#202600-beta-september-2026" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -680,10 +729,28 @@
 
 
 <h1 id="version-history">Version history<a class="headerlink" href="#version-history" title="Permanent link">&para;</a></h1>
+<h2 id="202610-beta">2026.1.0 (beta)<a class="headerlink" href="#202610-beta" title="Permanent link">&para;</a></h2>
+<p>The <strong>Fx</strong> button is renamed <strong>Motion</strong>: in After Effects, "fx" already means the effects.</p>
+<p>Textevo tries to do what you mean:</p>
+<ul>
+<li><strong>Motion</strong> on a text layer without Textevo, or with no text layer selected: creates a Textevo with this motion, with keyframes ready for the elastic or the bounce (12 frames apart by default, see the settings).</li>
+<li><strong>Add</strong> and <strong>2D / 3D</strong> work on all the selected text layers.</li>
+<li><strong>Paste</strong> creates a text layer when none is selected, like the presets.</li>
+<li><strong>Rename</strong> works when the text layer is selected, if it has only one Textevo.</li>
+<li><strong>Copy</strong> keeps the previous copy when the selected layer has no Textevo.</li>
+<li>The buttons tell you what to select instead of doing nothing.</li>
+<li><strong>Presets list</strong>: columns showing what each preset is based on and its motion, and filters by <strong>Based on</strong> and <strong>Motion</strong>. The buttons keep their size when the window grows.</li>
+<li>Changing the motion (or 2D / 3D, copying, applying a preset...) keeps <strong>all</strong> the settings of the selectors added to the text animator: Shape, Units, Based On of a range selector...</li>
+<li><strong>Delay from markers</strong> (Motion window): each letter, word or line starts at a marker of the layer, to sync a text with a voice over. Textevo can add the markers for you, at a reading speed (long words and punctuation take longer) or spread over the layer, and update them after you change the text. The presets add them to the layers without markers. The presets list shows them in the Motion column and filter.</li>
+<li><strong>Package</strong>: the script is now <code>textevo.jsxbin</code>. Remove the older Textevo files from the ScriptUI Panels folder (see <a href="../installation/#updating-from-an-older-version">Installation</a>).</li>
+<li>Fixed: the <strong>blank panel on macOS</strong>, caused by the package of 2026.0.0: the script was installed as a file named <code>Textevo_2026.0.0\Textevo.jsx</code>.</li>
+<li><strong>Based on</strong> can also set the <strong>anchor point grouping</strong> of the layer (character, word, line), checked by default (see the settings).</li>
+<li><strong>Dockable presets panel</strong>: install <code>textevo presets.jsxbin</code> (a separate download) to dock the presets manager like any After Effects panel. The Presets button opens it, and its list stays up to date.</li>
+</ul>
 <h2 id="202600-beta-september-2026">2026.0.0 (beta) - September 2026<a class="headerlink" href="#202600-beta-september-2026" title="Permanent link">&para;</a></h2>
 <p><strong>New</strong></p>
 <ul>
-<li><strong>Fx</strong> button: Elastic, Bounce or Oscillation on the strength, with their own controls. Textevo can optimize the keyframes eased on arrival.</li>
+<li><strong>Motion</strong> button (named <strong>Fx</strong> in this version): Elastic, Bounce or Oscillation on the strength, with their own controls. Textevo can optimize the keyframes eased on arrival.</li>
 <li>Presets applied <strong>from the start of the text layer</strong>, or at the current time with <span class="keys"><kbd class="key-alt">Alt</kbd></span> + click.</li>
 <li>Presets applied on <strong>all the selected text layers</strong>, or on a new text layer when none is selected.</li>
 <li>Presets window: <strong>search</strong> field and <strong>rename</strong> button, presets sorted by name.</li>

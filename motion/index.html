@@ -1,0 +1,938 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Textevo, a text animation tool for After Effects">
+      
+      
+        <meta name="author" content="Wlazinski Matthieu">
+      
+      
+        <link rel="canonical" href="https://textevo.github.io/motion/">
+      
+      
+        <link rel="prev" href="../controls/">
+      
+      
+        <link rel="next" href="../presets/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Motion - Textevo documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#motion" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Textevo documentation" class="md-header__button md-logo" aria-label="Textevo documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Textevo documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Motion
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Textevo documentation" class="md-nav__button md-logo" aria-label="Textevo documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Textevo documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-tips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick tips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interface
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../controls/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Controls
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Motion
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Motion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#elastic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Elastic
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bounce" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bounce
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#oscillation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Oscillation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eased-keyframes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eased keyframes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delay-from-markers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delay from markers
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../presets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Presets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../version-history/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Version history
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#elastic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Elastic
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bounce" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bounce
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#oscillation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Oscillation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eased-keyframes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eased keyframes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delay-from-markers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delay from markers
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="motion">Motion<a class="headerlink" href="#motion" title="Permanent link">&para;</a></h1>
+<p>The <strong>Motion</strong> button adds an <strong>Elastic</strong>, a <strong>Bounce</strong> or an <strong>Oscillation</strong> to the strength of a Textevo.</p>
+<p><img align="right" alt="Motion window" src="../img/fx_dialog.png" /></p>
+<p>Select one or more Textevo effects (or text layers, for all their Textevo), click <strong>Motion</strong> and choose:</p>
+<ul>
+<li>a Textevo gets the chosen motion, keeping its keyframes,</li>
+<li>a text layer <strong>without Textevo</strong> gets a new Textevo with this motion,</li>
+<li>with <strong>no text layer selected</strong>, Textevo creates a text layer with a Textevo and this motion.</li>
+</ul>
+<p>A Textevo created with an <strong>Elastic</strong> or a <strong>Bounce</strong> is ready to play: its two keyframes are <strong>12 frames</strong> apart (see the <a href="../settings/#motion">settings</a>), with a slow departure and a linear arrival, so the overshoot shows right away.</p>
+<table>
+<thead>
+<tr>
+<th>Motion</th>
+<th>What it does</th>
+<th>Controls</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>None</strong></td>
+<td>back to the standard Textevo</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Elastic</strong></td>
+<td>overshoots and wobbles after each keyframe</td>
+<td>Amplitude, Frequency, Decay</td>
+</tr>
+<tr>
+<td><strong>Bounce</strong></td>
+<td>bounces back after each keyframe</td>
+<td>Elasticity, Gravity, Max bounces</td>
+</tr>
+<tr>
+<td><strong>Oscillation</strong></td>
+<td>a continuous sine wave on the strength</td>
+<td>Amplitude, Frequency, Phase per character</td>
+</tr>
+</tbody>
+</table>
+<p>The motion controls are in a new group at the end of the effect: tweak and keyframe them like any other parameter.</p>
+<p><img alt="Elastic controls" src="../img/fx_elastic_controls.png" /></p>
+<p>The motion follows the delay of each letter, word or line, like the rest of the animation. The effect keeps its name, its position, its keyframes and its "Based on" mode, and the motion is saved in the copies and the presets.</p>
+<h2 id="elastic">Elastic<a class="headerlink" href="#elastic" title="Permanent link">&para;</a></h2>
+<p>After each keyframe of the Strength, the text goes past its value and wobbles back to it.</p>
+<ul>
+<li><strong>Amplitude</strong>: how far it goes past the value.</li>
+<li><strong>Frequency</strong>: the number of wobbles per second.</li>
+<li><strong>Decay</strong>: how fast the wobbles fade out.</li>
+</ul>
+<h2 id="bounce">Bounce<a class="headerlink" href="#bounce" title="Permanent link">&para;</a></h2>
+<p>After each keyframe of the Strength, the text bounces back, like a ball on the floor.</p>
+<ul>
+<li><strong>Elasticity</strong>: the height of each bounce compared to the previous one.</li>
+<li><strong>Gravity</strong>: higher values give faster, smaller bounces.</li>
+<li><strong>Max bounces</strong>: the number of bounces.</li>
+</ul>
+<h2 id="oscillation">Oscillation<a class="headerlink" href="#oscillation" title="Permanent link">&para;</a></h2>
+<p>A continuous sine wave added to the strength, even without keyframes: floating texts, pulses...</p>
+<ul>
+<li><strong>Amplitude</strong>: the size of the oscillation, in % of strength.</li>
+<li><strong>Frequency</strong>: the number of oscillations per second.</li>
+<li><strong>Phase per character</strong>: offsets each letter, word or line, for a wave through the text.</li>
+</ul>
+<h2 id="eased-keyframes">Eased keyframes<a class="headerlink" href="#eased-keyframes" title="Permanent link">&para;</a></h2>
+<p>The <strong>Elastic</strong> and the <strong>Bounce</strong> start from the speed of the Strength when it reaches a keyframe. A keyframe <strong>eased on arrival</strong> (Easy Ease, or the "Second key" influence of the <a href="../settings/">settings</a>) arrives with a speed of 0: nothing happens after it.</p>
+<p>When you choose Elastic or Bounce, or paste or apply a preset using them, Textevo detects these keyframes and asks what to do:</p>
+<ul>
+<li><strong>Optimized keys</strong>: linear arrival, and a slow departure from the previous keyframe (at least 75 % of influence): the speed builds up and the keyframe is reached fast. The strongest effect.</li>
+<li><strong>Linear arrival</strong>: only removes the ease on arrival.</li>
+<li><strong>Keep the keys</strong>: changes nothing.</li>
+</ul>
+<p>Check <strong>Don't ask again</strong> to always do the same thing. The choice can be changed in the <a href="../settings/">settings</a>: "Elastic / bounce on eased keys".</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Keyframes closer to each other also give a stronger elastic or bounce: the arrival is faster.</p>
+</div>
+<h2 id="delay-from-markers">Delay from markers<a class="headerlink" href="#delay-from-markers" title="Permanent link">&para;</a></h2>
+<p>The <strong>Delay</strong> panel of the Motion window chooses what starts each letter, word or line:</p>
+<ul>
+<li><strong>Frames</strong>: the usual delay, in frames between two letters, words or lines (the <strong>Delay</strong> of the effect).</li>
+<li><strong>Markers</strong>: each letter, word or line starts at a <strong>marker of the layer</strong>: the first one at the first marker, the second at the second marker... Move the markers to change the timing, for example to sync the words with a voice over. The name of the markers doesn't matter.</li>
+</ul>
+<p><strong>Add or update the markers</strong> adds one marker per letter, word or line (according to the <strong>Based on</strong> mode and the <strong>Direction</strong>), named after it, from the first keyframe of Strength. The markers already added by Textevo are replaced: after correcting the text, click <strong>Markers</strong> again to get the markers of the new text. The markers you added yourself stay. It is checked when a selected layer has no markers, or when its text no longer matches the markers of Textevo. The markers are added:</p>
+<ul>
+<li><strong>At a reading speed</strong> (by default, 180 words per minute): a long word stays longer than a short one, and the text pauses after a comma, longer after a period or at the end of a line. The rhythm of someone reading the text, a good start for kinetic typography; move a few markers to fine-tune it. When the text needs more time than the layer, the layer is lengthened.</li>
+<li><strong>Spread over the layer</strong>: the same time between the markers, the last one so that its animation ends at the end of the layer.</li>
+</ul>
+<p>The choice and the speed are remembered, and used by the presets too (see the <a href="../settings/#motion">settings</a>). With the <strong>Random</strong> direction, the markers are always spread over the layer: the order of the letters is only known by the expression.</p>
+<ul>
+<li>The animation of each letter, word or line is the one of the keyframes of Strength, moved to start at its marker.</li>
+<li>With the <strong>Outward</strong> or <strong>Inward</strong> direction, the letters that start together share a marker.</li>
+<li>The letters, words or lines after the last marker keep the delay in frames after it.</li>
+<li>The markers mode is kept by the copies, the presets, 2D / 3D and the motions. The markers themselves are not copied: pasted or applied as a preset on a layer <strong>without markers</strong>, the Textevo adds its markers, one per letter, word or line of the new text. A layer that already has markers keeps them.</li>
+<li>With nothing selected, <strong>Markers</strong> creates a text layer with a Textevo in markers mode.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The markers are shared by all the Textevo of the layer: use the markers mode on one Textevo (the entrance for example) and the delay in frames on the others.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../controls/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Controls">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Controls
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../presets/" class="md-footer__link md-footer__link--next" aria-label="Next: Presets">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Presets
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.top", "navigation.footer", "search.highlight", "search.suggest", "content.tabs.link"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://textevo.github.io/interface/">
       
       
-        <link rel="prev" href="../getting-started/">
+        <link rel="prev" href="../quick-tips/">
       
       
         <link rel="next" href="../controls/">
@@ -318,6 +318,33 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-tips/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick tips
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -436,10 +463,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#fx" class="md-nav__link">
+  <a href="#motion" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Fx
+        Motion
       
     </span>
   </a>
@@ -532,14 +559,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../fx/" class="md-nav__link">
+      <a href="../motion/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Fx
+    Motion
   
 
     
@@ -742,10 +769,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#fx" class="md-nav__link">
+  <a href="#motion" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Fx
+        Motion
       
     </span>
   </a>
@@ -816,15 +843,20 @@
 <h1 id="interface">Interface<a class="headerlink" href="#interface" title="Permanent link">&para;</a></h1>
 <p>The Textevo panel adapts to its size: dock it vertically or horizontally.</p>
 <p><img alt="Textevo panel" src="../img/interface_2026.png" /></p>
-<p>From left to right (or from top to bottom): <strong>Add</strong>, <strong>Remove</strong>, <strong>Rename</strong>, <strong>Based on</strong>, <strong>2D / 3D</strong>, <strong>Fx</strong>, <strong>Copy</strong>, <strong>Paste</strong>, <strong>Presets</strong> and <strong>Settings</strong>. Hover a button to see what it does.</p>
-<p>Most buttons work on the <strong>selected Textevo effects</strong>, or on <strong>all the Textevo of the selected text layers</strong> when no Textevo is selected.</p>
+<p>From left to right (or from top to bottom): <strong>Add</strong>, <strong>Remove</strong>, <strong>Rename</strong>, <strong>Based on</strong>, <strong>2D / 3D</strong>, <strong>Motion</strong>, <strong>Copy</strong>, <strong>Paste</strong>, <strong>Presets</strong> and <strong>Settings</strong>. Hover a button to see what it does.</p>
+<p>The buttons try to do what you mean:</p>
+<ul>
+<li>they work on the <strong>selected Textevo effects</strong>, or on <strong>all the Textevo of the selected text layers</strong> when no Textevo is selected,</li>
+<li>they work on <strong>all the selected text layers</strong> at once,</li>
+<li>when there is nothing to work on, <strong>Add</strong>, <strong>Motion</strong>, <strong>Paste</strong> and applying a preset <strong>create a text layer</strong> for you; the other buttons tell you what to select.</li>
+</ul>
 <div class="admonition warning">
 <p class="admonition-title">Always use the Remove and Rename buttons</p>
 <p>A Textevo is made of two parts: the <strong>Textevo effect</strong> and a <strong>text animator</strong> on the text layer, linked by expressions.
 Removing or renaming the effect by hand only changes one of the two parts. Use the <strong>Remove</strong> and <strong>Rename</strong> buttons of the panel, which handle both.</p>
 </div>
 <h2 id="add">Add<a class="headerlink" href="#add" title="Permanent link">&para;</a></h2>
-<p>Adds a Textevo to the selected text layer. If no text layer is selected, Textevo creates one in the active composition.</p>
+<p>Adds a Textevo to <strong>all the selected text layers</strong>. If no text layer is selected, Textevo creates one in the active composition.</p>
 <ul>
 <li><strong>Click</strong>: keyframes on the Strength from 100 % to 0 %, starting at the current time (an arrival).</li>
 <li><span class="keys"><kbd class="key-alt">Alt</kbd></span> + <strong>click</strong>: the reversed animation, from 0 % to 100 %, with mirrored easing (an exit).</li>
@@ -834,20 +866,21 @@ Removing or renaming the effect by hand only changes one of the two parts. Use t
 <p>Removes the selected Textevo, or all the Textevo of the selected layers: the effect <strong>and</strong> its text animator.</p>
 <p>If you delete the effect by hand, its text animator stays on the layer with expression errors, and has to be deleted by hand too.</p>
 <h2 id="rename">Rename<a class="headerlink" href="#rename" title="Permanent link">&para;</a></h2>
-<p>Renames the selected Textevo effect and its text animator together.</p>
+<p>Renames the selected Textevo effect and its text animator together. If you select the text layer and it has only one Textevo, that one is renamed.</p>
 <p>If you rename the effect by hand, After Effects updates the expressions but not the name of the text animator: the effect and its animator no longer have the same name in the timeline.</p>
 <h2 id="based-on">Based on<a class="headerlink" href="#based-on" title="Permanent link">&para;</a></h2>
 <p>Chooses how the text is broken down: <strong>Letters</strong>, <strong>Letters spaceless</strong>, <strong>Words</strong> or <strong>Lines</strong>.</p>
 <p><img alt="Based on" src="../img/BasedOn.png" /></p>
 <p><strong>Auto adapt the delay</strong>: adjusts the delay to the new number of letters, words or lines, to keep about the same total duration. For example, switching from 12 letters to 3 words multiplies the delay by 4.</p>
+<p><strong>Match the anchor point grouping</strong>: also sets the <strong>Anchor Point Grouping</strong> of the layer (in the More Options of the text): <strong>Character</strong> for letters, <strong>Word</strong> for words, <strong>Line</strong> for lines. A scale or a rotation then turns each word or line around its own center. Uncheck it to keep your own grouping. Its default state is in the <a href="../settings/">settings</a>.</p>
 <h2 id="2d-3d">2D / 3D<a class="headerlink" href="#2d-3d" title="Permanent link">&para;</a></h2>
-<p>Switches the 3D per character of the layer on or off. The Textevo animators are rebuilt with the 2D or 3D properties (3D rotations, Z position...), keeping your settings and what you added to them.</p>
-<h2 id="fx">Fx<a class="headerlink" href="#fx" title="Permanent link">&para;</a></h2>
-<p>Adds an <strong>Elastic</strong>, a <strong>Bounce</strong> or an <strong>Oscillation</strong> to the strength of the Textevo. See <a href="../fx/">Fx</a>.</p>
+<p>Switches the 3D per character of the selected text layers on or off. The Textevo animators are rebuilt with the 2D or 3D properties (3D rotations, Z position...), keeping your settings and what you added to them.</p>
+<h2 id="motion">Motion<a class="headerlink" href="#motion" title="Permanent link">&para;</a></h2>
+<p>Adds an <strong>Elastic</strong>, a <strong>Bounce</strong> or an <strong>Oscillation</strong> to the strength of the Textevo. On a text layer without Textevo, or with no text layer selected, it creates a Textevo with this motion, ready to play. See <a href="../motion/">Motion</a>.</p>
 <h2 id="copy">Copy<a class="headerlink" href="#copy" title="Permanent link">&para;</a></h2>
-<p>Copies the selected Textevo, or all the Textevo of the layer: the effects with their keyframes, their Fx, their "Based on" mode and what you added to their text animators.</p>
+<p>Copies the selected Textevo, or all the Textevo of the layer: the effects with their keyframes, their motion, their "Based on" mode and what you added to their text animators.</p>
 <h2 id="paste">Paste<a class="headerlink" href="#paste" title="Permanent link">&para;</a></h2>
-<p>Pastes the copied Textevo on all the selected text layers.</p>
+<p>Pastes the copied Textevo on all the selected text layers, or on a new text layer if none is selected.</p>
 <ul>
 <li><strong>Click</strong>: the keyframes keep their position from the start (in point) of the layer: a keyframe on the first frame of the copied layer lands on the first frame of the target layer.</li>
 <li><span class="keys"><kbd class="key-alt">Alt</kbd></span> + <strong>click</strong>: the first keyframe lands at the current time.</li>
@@ -896,7 +929,7 @@ Removing or renaming the effect by hand only changes one of the two parts. Use t
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../getting-started/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Getting started">
+          <a href="../quick-tips/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Quick tips">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -906,7 +939,7 @@ Removing or renaming the effect by hand only changes one of the two parts. Use t
                 Previous
               </span>
               <div class="md-ellipsis">
-                Getting started
+                Quick tips
               </div>
             </div>
           </a>
